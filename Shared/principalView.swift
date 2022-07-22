@@ -12,6 +12,7 @@ struct principalView: View {
         NavigationView {
             VStack {
                 nameFilteredView()
+                cameraView()
             }
         }
         .onTapGesture {

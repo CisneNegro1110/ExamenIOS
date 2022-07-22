@@ -11,7 +11,6 @@ import SwiftUI
 struct ExamenIOSApp: App {
     var body: some Scene {
         WindowGroup {
-            //ContentView()
             principalView()
         }
     }
