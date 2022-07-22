@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EA741A01288A52480051141F /* nameFilteredView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA741A00288A52470051141F /* nameFilteredView.swift */; };
+		EA741A04288A52970051141F /* hideKeyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA741A03288A52970051141F /* hideKeyboard.swift */; };
 		EA8459FF288A23C900B5B24F /* Tests_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA8459FE288A23C900B5B24F /* Tests_iOS.swift */; };
 		EA845A01288A23C900B5B24F /* Tests_iOSLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA845A00288A23C900B5B24F /* Tests_iOSLaunchTests.swift */; };
 		EA845A0B288A23C900B5B24F /* Tests_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA845A0A288A23C900B5B24F /* Tests_macOS.swift */; };
@@ -17,6 +19,7 @@
 		EA845A11288A23C900B5B24F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA8459E7288A23C500B5B24F /* ContentView.swift */; };
 		EA845A12288A23C900B5B24F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA8459E8288A23C900B5B24F /* Assets.xcassets */; };
 		EA845A13288A23C900B5B24F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA8459E8288A23C900B5B24F /* Assets.xcassets */; };
+		EA845A24288A24DF00B5B24F /* principalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA845A23288A24DF00B5B24F /* principalView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +40,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		EA741A00288A52470051141F /* nameFilteredView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = nameFilteredView.swift; sourceTree = "<group>"; };
+		EA741A03288A52970051141F /* hideKeyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = hideKeyboard.swift; sourceTree = "<group>"; };
 		EA8459E6288A23C500B5B24F /* ExamenIOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExamenIOSApp.swift; sourceTree = "<group>"; };
 		EA8459E7288A23C500B5B24F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		EA8459E8288A23C900B5B24F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -49,6 +54,7 @@
 		EA845A06288A23C900B5B24F /* Tests macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA845A0A288A23C900B5B24F /* Tests_macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOS.swift; sourceTree = "<group>"; };
 		EA845A0C288A23C900B5B24F /* Tests_macOSLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOSLaunchTests.swift; sourceTree = "<group>"; };
+		EA845A23288A24DF00B5B24F /* principalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = principalView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +89,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		EA741A02288A52860051141F /* Extras */ = {
+			isa = PBXGroup;
+			children = (
+				EA741A03288A52970051141F /* hideKeyboard.swift */,
+			);
+			path = Extras;
+			sourceTree = "<group>";
+		};
 		EA8459E0288A23C400B5B24F = {
 			isa = PBXGroup;
 			children = (
@@ -99,6 +113,8 @@
 			children = (
 				EA8459E6288A23C500B5B24F /* ExamenIOSApp.swift */,
 				EA8459E7288A23C500B5B24F /* ContentView.swift */,
+				EA741A02288A52860051141F /* Extras */,
+				EA845A22288A24C000B5B24F /* Views */,
 				EA8459E8288A23C900B5B24F /* Assets.xcassets */,
 			);
 			path = Shared;
@@ -139,6 +155,15 @@
 				EA845A0C288A23C900B5B24F /* Tests_macOSLaunchTests.swift */,
 			);
 			path = "Tests macOS";
+			sourceTree = "<group>";
+		};
+		EA845A22288A24C000B5B24F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				EA845A23288A24DF00B5B24F /* principalView.swift */,
+				EA741A00288A52470051141F /* nameFilteredView.swift */,
+			);
+			name = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -299,8 +324,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA741A01288A52480051141F /* nameFilteredView.swift in Sources */,
+				EA741A04288A52970051141F /* hideKeyboard.swift in Sources */,
 				EA845A10288A23C900B5B24F /* ContentView.swift in Sources */,
 				EA845A0E288A23C900B5B24F /* ExamenIOSApp.swift in Sources */,
+				EA845A24288A24DF00B5B24F /* principalView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
