@@ -11,8 +11,10 @@ struct principalView: View {
     var body: some View {
         NavigationView {
             VStack {
-                nameFilteredView()
-                cameraView()
+                List {
+                    nameFilteredView()
+                    cameraView()
+                }  
             }
         }
         .onTapGesture {

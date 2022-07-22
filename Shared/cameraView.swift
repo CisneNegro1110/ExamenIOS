@@ -9,23 +9,31 @@ import SwiftUI
 
 struct cameraView: View {
     @State private var isShow = false
-    @State private var image: Image = Image(systemName: "person.badge.plus")
+    @State private var image: Image = Image(systemName: "person.fill.badge.plus")
     @State private var sourceType: UIImagePickerController.SourceType = .camera
     var body: some View {
-            VStack {
-                image.resizable()
-                          .frame(width: 250, height: 200)
-                          .clipShape(Circle())
-                          .overlay(Circle().stroke(Color.white, lineWidth: 4))
-                          .shadow(radius: 10)
-                Button("Camera") {
+        VStack {
+            HStack {
+                Spacer()
+                Button {
                     self.isShow.toggle()
                     self.sourceType = .camera
+                } label: {
+                    image.resizable()
+                        .scaledToFit()
+                        .frame(width: 170, height: 150)
+                        .padding()
+                        .clipShape(Circle())
+                        .overlay(Circle().stroke(Color.white, lineWidth: 4))
+                        .shadow(radius: 10)
+                        .foregroundColor(.blue)
                 }
+                Spacer()
             }
-            .sheet(isPresented: $isShow) {
-                AccessCamera(isShow: self.$isShow, myImage: self.$image, mySourceType: self.$sourceType)
-            }
+        }
+        .sheet(isPresented: $isShow) {
+            AccessCamera(isShow: self.$isShow, myImage: self.$image, mySourceType: self.$sourceType)
+        }
     }
 }
 
