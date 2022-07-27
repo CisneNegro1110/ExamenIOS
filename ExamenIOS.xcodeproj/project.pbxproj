@@ -7,22 +7,31 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EA7193F6288B7CFA00628973 /* SwiftUICharts in Frameworks */ = {isa = PBXBuildFile; productRef = EA7193F5288B7CFA00628973 /* SwiftUICharts */; };
 		EA741A01288A52480051141F /* nameFilteredView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA741A00288A52470051141F /* nameFilteredView.swift */; };
 		EA741A04288A52970051141F /* Keyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA741A03288A52970051141F /* Keyboard.swift */; };
 		EA741A06288A54E90051141F /* cameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA741A05288A54E90051141F /* cameraView.swift */; };
 		EA741A08288A55820051141F /* AccessCamera.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA741A07288A55820051141F /* AccessCamera.swift */; };
 		EA741A0A288A55C70051141F /* CoordinatorCamara.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA741A09288A55C70051141F /* CoordinatorCamara.swift */; };
+		EA741A0D288A714A0051141F /* GraphView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA741A0C288A714A0051141F /* GraphView.swift */; };
+		EA741A10288A777B0051141F /* dataJson.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA741A0F288A777B0051141F /* dataJson.swift */; };
 		EA8459FF288A23C900B5B24F /* Tests_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA8459FE288A23C900B5B24F /* Tests_iOS.swift */; };
 		EA845A01288A23C900B5B24F /* Tests_iOSLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA845A00288A23C900B5B24F /* Tests_iOSLaunchTests.swift */; };
 		EA845A0B288A23C900B5B24F /* Tests_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA845A0A288A23C900B5B24F /* Tests_macOS.swift */; };
 		EA845A0D288A23C900B5B24F /* Tests_macOSLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA845A0C288A23C900B5B24F /* Tests_macOSLaunchTests.swift */; };
 		EA845A0E288A23C900B5B24F /* ExamenIOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA8459E6288A23C500B5B24F /* ExamenIOSApp.swift */; };
 		EA845A0F288A23C900B5B24F /* ExamenIOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA8459E6288A23C500B5B24F /* ExamenIOSApp.swift */; };
-		EA845A10288A23C900B5B24F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA8459E7288A23C500B5B24F /* ContentView.swift */; };
-		EA845A11288A23C900B5B24F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA8459E7288A23C500B5B24F /* ContentView.swift */; };
+		EA845A10288A23C900B5B24F /* ChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA8459E7288A23C500B5B24F /* ChartView.swift */; };
 		EA845A12288A23C900B5B24F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA8459E8288A23C900B5B24F /* Assets.xcassets */; };
 		EA845A13288A23C900B5B24F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA8459E8288A23C900B5B24F /* Assets.xcassets */; };
 		EA845A24288A24DF00B5B24F /* principalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA845A23288A24DF00B5B24F /* principalView.swift */; };
+		EA8DA990288F62DF00864475 /* NetworkViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA8DA98F288F62DF00864475 /* NetworkViewModel.swift */; };
+		EA8DA992288F9C9800864475 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EA8DA991288F9C9800864475 /* GoogleService-Info.plist */; };
+		EA8DA993288F9C9800864475 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EA8DA991288F9C9800864475 /* GoogleService-Info.plist */; };
+		EA8DA996288F9E6300864475 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = EA8DA995288F9E6300864475 /* FirebaseStorage */; };
+		EA8DA998288F9E6300864475 /* FirebaseStorageCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = EA8DA997288F9E6300864475 /* FirebaseStorageCombine-Community */; };
+		EA8DA99A288F9FBC00864475 /* FirebaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA8DA999288F9FBC00864475 /* FirebaseViewModel.swift */; };
+		EA8DA99B288F9FBC00864475 /* FirebaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA8DA999288F9FBC00864475 /* FirebaseViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,8 +57,10 @@
 		EA741A05288A54E90051141F /* cameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cameraView.swift; sourceTree = "<group>"; };
 		EA741A07288A55820051141F /* AccessCamera.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessCamera.swift; sourceTree = "<group>"; };
 		EA741A09288A55C70051141F /* CoordinatorCamara.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorCamara.swift; sourceTree = "<group>"; };
+		EA741A0C288A714A0051141F /* GraphView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphView.swift; sourceTree = "<group>"; };
+		EA741A0F288A777B0051141F /* dataJson.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dataJson.swift; sourceTree = "<group>"; };
 		EA8459E6288A23C500B5B24F /* ExamenIOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExamenIOSApp.swift; sourceTree = "<group>"; };
-		EA8459E7288A23C500B5B24F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		EA8459E7288A23C500B5B24F /* ChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartView.swift; sourceTree = "<group>"; };
 		EA8459E8288A23C900B5B24F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EA8459ED288A23C900B5B24F /* ExamenIOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExamenIOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA8459F3288A23C900B5B24F /* ExamenIOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExamenIOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -61,6 +72,9 @@
 		EA845A0A288A23C900B5B24F /* Tests_macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOS.swift; sourceTree = "<group>"; };
 		EA845A0C288A23C900B5B24F /* Tests_macOSLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOSLaunchTests.swift; sourceTree = "<group>"; };
 		EA845A23288A24DF00B5B24F /* principalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = principalView.swift; sourceTree = "<group>"; };
+		EA8DA98F288F62DF00864475 /* NetworkViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkViewModel.swift; sourceTree = "<group>"; };
+		EA8DA991288F9C9800864475 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		EA8DA999288F9FBC00864475 /* FirebaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +82,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA7193F6288B7CFA00628973 /* SwiftUICharts in Frameworks */,
+				EA8DA998288F9E6300864475 /* FirebaseStorageCombine-Community in Frameworks */,
+				EA8DA996288F9E6300864475 /* FirebaseStorage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -113,6 +130,14 @@
 			path = Camera;
 			sourceTree = "<group>";
 		};
+		EA741A0E288A77630051141F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EA741A0F288A777B0051141F /* dataJson.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
 		EA8459E0288A23C400B5B24F = {
 			isa = PBXGroup;
 			children = (
@@ -128,10 +153,12 @@
 			isa = PBXGroup;
 			children = (
 				EA8459E6288A23C500B5B24F /* ExamenIOSApp.swift */,
-				EA8459E7288A23C500B5B24F /* ContentView.swift */,
+				EA741A0E288A77630051141F /* Model */,
 				EA741A02288A52860051141F /* Extras */,
+				EA8DA98E288F62C200864475 /* View Model */,
 				EA845A22288A24C000B5B24F /* Views */,
 				EA8459E8288A23C900B5B24F /* Assets.xcassets */,
+				EA8DA991288F9C9800864475 /* GoogleService-Info.plist */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -176,11 +203,22 @@
 		EA845A22288A24C000B5B24F /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				EA8459E7288A23C500B5B24F /* ChartView.swift */,
 				EA845A23288A24DF00B5B24F /* principalView.swift */,
 				EA741A00288A52470051141F /* nameFilteredView.swift */,
 				EA741A05288A54E90051141F /* cameraView.swift */,
+				EA741A0C288A714A0051141F /* GraphView.swift */,
 			);
 			name = Views;
+			sourceTree = "<group>";
+		};
+		EA8DA98E288F62C200864475 /* View Model */ = {
+			isa = PBXGroup;
+			children = (
+				EA8DA98F288F62DF00864475 /* NetworkViewModel.swift */,
+				EA8DA999288F9FBC00864475 /* FirebaseViewModel.swift */,
+			);
+			path = "View Model";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -199,6 +237,11 @@
 			dependencies = (
 			);
 			name = "ExamenIOS (iOS)";
+			packageProductDependencies = (
+				EA7193F5288B7CFA00628973 /* SwiftUICharts */,
+				EA8DA995288F9E6300864475 /* FirebaseStorage */,
+				EA8DA997288F9E6300864475 /* FirebaseStorageCombine-Community */,
+			);
 			productName = "ExamenIOS (iOS)";
 			productReference = EA8459ED288A23C900B5B24F /* ExamenIOS.app */;
 			productType = "com.apple.product-type.application";
@@ -291,6 +334,10 @@
 				Base,
 			);
 			mainGroup = EA8459E0288A23C400B5B24F;
+			packageReferences = (
+				EA7193F4288B7CFA00628973 /* XCRemoteSwiftPackageReference "ChartView" */,
+				EA8DA994288F9E6300864475 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = EA8459EE288A23C900B5B24F /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -309,6 +356,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EA845A12288A23C900B5B24F /* Assets.xcassets in Resources */,
+				EA8DA992288F9C9800864475 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -317,6 +365,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EA845A13288A23C900B5B24F /* Assets.xcassets in Resources */,
+				EA8DA993288F9C9800864475 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -343,12 +392,16 @@
 			files = (
 				EA741A01288A52480051141F /* nameFilteredView.swift in Sources */,
 				EA741A06288A54E90051141F /* cameraView.swift in Sources */,
+				EA741A0D288A714A0051141F /* GraphView.swift in Sources */,
+				EA8DA99A288F9FBC00864475 /* FirebaseViewModel.swift in Sources */,
 				EA741A04288A52970051141F /* Keyboard.swift in Sources */,
 				EA741A0A288A55C70051141F /* CoordinatorCamara.swift in Sources */,
-				EA845A10288A23C900B5B24F /* ContentView.swift in Sources */,
+				EA8DA990288F62DF00864475 /* NetworkViewModel.swift in Sources */,
+				EA845A10288A23C900B5B24F /* ChartView.swift in Sources */,
 				EA741A08288A55820051141F /* AccessCamera.swift in Sources */,
 				EA845A0E288A23C900B5B24F /* ExamenIOSApp.swift in Sources */,
 				EA845A24288A24DF00B5B24F /* principalView.swift in Sources */,
+				EA741A10288A777B0051141F /* dataJson.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -356,7 +409,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EA845A11288A23C900B5B24F /* ContentView.swift in Sources */,
+				EA8DA99B288F9FBC00864475 /* FirebaseViewModel.swift in Sources */,
 				EA845A0F288A23C900B5B24F /* ExamenIOSApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -751,6 +804,43 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		EA7193F4288B7CFA00628973 /* XCRemoteSwiftPackageReference "ChartView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AppPear/ChartView";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+		EA8DA994288F9E6300864475 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		EA7193F5288B7CFA00628973 /* SwiftUICharts */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EA7193F4288B7CFA00628973 /* XCRemoteSwiftPackageReference "ChartView" */;
+			productName = SwiftUICharts;
+		};
+		EA8DA995288F9E6300864475 /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EA8DA994288F9E6300864475 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
+		};
+		EA8DA997288F9E6300864475 /* FirebaseStorageCombine-Community */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EA8DA994288F9E6300864475 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseStorageCombine-Community";
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = EA8459E1288A23C400B5B24F /* Project object */;
 }

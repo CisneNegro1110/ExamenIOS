@@ -9,8 +9,9 @@ import SwiftUI
 
 struct cameraView: View {
     @State private var isShow = false
-    @State private var image: Image = Image(systemName: "person.fill.badge.plus")
+    @Binding var image: UIImage?
     @State private var sourceType: UIImagePickerController.SourceType = .camera
+    @StateObject var storageVM = FirebaseViewModel()
     var body: some View {
         VStack {
             HStack {
@@ -19,14 +20,23 @@ struct cameraView: View {
                     self.isShow.toggle()
                     self.sourceType = .camera
                 } label: {
-                    image.resizable()
-                        .scaledToFit()
-                        .frame(width: 170, height: 150)
-                        .padding()
-                        .clipShape(Circle())
-                        .overlay(Circle().stroke(Color.white, lineWidth: 4))
-                        .shadow(radius: 10)
-                        .foregroundColor(.blue)
+                    if let image = image {
+                        Image(uiImage: image)
+                            .resizable()
+                                .scaledToFit()
+                                .frame(width: 170, height: 150)
+                                .clipShape(Circle())
+                                .overlay(Circle().stroke(Color.white, lineWidth: 3))
+                                .foregroundColor(.blue)
+                    } else {
+                        Image(systemName: "person.badge.plus")
+                            .resizable()
+                                .scaledToFit()
+                                .frame(width: 170, height: 150)
+                                .clipShape(Circle())
+                                .overlay(Circle().stroke(Color.white, lineWidth: 3))
+                                .foregroundColor(.blue)
+                    }
                 }
                 Spacer()
             }
@@ -34,11 +44,5 @@ struct cameraView: View {
         .sheet(isPresented: $isShow) {
             AccessCamera(isShow: self.$isShow, myImage: self.$image, mySourceType: self.$sourceType)
         }
-    }
-}
-
-struct cameraView_Previews: PreviewProvider {
-    static var previews: some View {
-        cameraView()
     }
 }

@@ -11,7 +11,7 @@ import SwiftUI
 
 struct AccessCamera: UIViewControllerRepresentable {
     @Binding var isShow: Bool
-    @Binding var myImage: Image
+    @Binding var myImage: UIImage?
     @Binding var mySourceType: UIImagePickerController.SourceType
     func updateUIViewController(_ uiViewController: UIImagePickerController, context: UIViewControllerRepresentableContext<AccessCamera>) {
     }
