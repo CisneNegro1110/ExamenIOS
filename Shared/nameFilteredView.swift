@@ -9,7 +9,7 @@ import SwiftUI
 import Combine
 
 struct nameFilteredView: View {
-    @State private var name = ""
+    @Binding var name: String
     var body: some View {
         TextField("Name", text: $name)
             .autocapitalization(.words)
@@ -20,11 +20,5 @@ struct nameFilteredView: View {
                     self.name = "\(filtered)"
                 }
             }
-    }
-}
-
-struct nameFilteredView_Previews: PreviewProvider {
-    static var previews: some View {
-        nameFilteredView()
     }
 }
